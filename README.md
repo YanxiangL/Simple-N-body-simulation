@@ -1,4 +1,4 @@
-# Simple-N-body-simulation
+# A simple-N-body-simulation
 This is a simple N-body simulation which uses Newton's law of graivty to calculate the forces between particles in the simulation. In addition, this code also allows users to use a simplified version of the tree code to approximate the motion of particles in the simulation with less time. This code will also calculate the two-point correlation function using the Peebles-Hauser estimator. The matter power spectrum of the simulation is obtained by Fourier transforming the two-point correlation function. 
 ## Scale of the simulation
 The default scale in the simulation is:
@@ -25,7 +25,7 @@ This is a python code. The modules require to run this code are numpy (https://n
 ## Default setting
 The initial condition for the position is set to random distribution of particles within a 10 kpc cube. The velocity of particles follow a 3 dimentional Gaussian distribution with the the mean velocity set to 0 and standard deviation set to 0.1 kpc/Myr in each dimension. The mass of the particle is assigned randomly between the mass_min and mass_max provides by the user. 
 
-## Advanced settings.
+## Advanced settings
 Initial conditions:
 The initial condition can be modified inside the code. To modify the initial position, change the variable called "position" to the desired initial condition. To modify the inital velocity, change the variable called "velocity" to the desired initial condition. To change the mass distribution of the particle, find a variable called "mass" and change it to the desired distribution.
 
@@ -50,7 +50,7 @@ The two-point correlation function will be shown in the top right corner. The he
 
 The power spectrum can be interpreted as the variance of the density perturbation at different wavenumber in the Fourier space. The variance describes how much a qunatity will vary with respect to its expectation value. Therefore, the power spectrum is just how the density perturbation will vary in terms of the mean density perturbation for a specific wavenumber. 
 
-The code will also output how much time it takes for the code to run. The output is in the unit of seconds. 
+The code will also output how much time it takes for the code to run. The output is in the unit of seconds. You can use this to compare whether the grid approximation is more efficient than the exact method. 
 ## Limitation of the model
 1. Any interaction between particles below the soften scale is inaccurate. 
 2. The power spectrum is an rough approximation of the actual power spectrum. To properly calculate the power spectrum, we have to calculate the density perturbation and Fourier transform this to get the proper power spectrum. 
