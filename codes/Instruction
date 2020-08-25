@@ -1,0 +1,3 @@
+This section contains the codes of the N-body simulation. The N_body.py is the code used to generate all the simulations in the presentation folder. The test3.py takes 
+a much longer time to run since it uses numerical integration instead of trapezoidal rule. The only propose of test.py is to illustrate that numerical integration and trapezoidal
+rule  will give the same result. 
