@@ -62,4 +62,8 @@ If you find the particles are moving very fast in the simulation, this could be 
 Use the grid approximation to calculate the motion if you have more than 500 particles in the simulation. 
 The optimal number of grid cells in each dimension is around 4 to 6 if the number of particles is between 100 and a few thousand. However, the initial condition of position will also slightly changes the efficiency of the grid approximation. 
 
+## Codes and presentation
+
+The main code to generate the N_body simulation is the N_body.py and you can find it in the code folder. A demonstration of some output from the code is in the presentation folder. 
+
 
